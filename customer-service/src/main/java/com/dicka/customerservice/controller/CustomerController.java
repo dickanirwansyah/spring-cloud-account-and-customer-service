@@ -19,6 +19,7 @@ import com.dicka.customerservice.model.CustomerType;
 @RequestMapping(value = "/customers")
 public class CustomerController {
 
+	/** logging class **/
 	protected Logger logger = Logger.getLogger(CustomerController.class.getName());
 	private final AccountFeign accountFeign;
 	private List<Customer> customers;
@@ -27,10 +28,17 @@ public class CustomerController {
 	public CustomerController(AccountFeign accountFeign){
 		this.accountFeign = accountFeign;
 		customers = new ArrayList<Customer>();
-		customers.add(new Customer(1, "12345", "dicka nirwansyah", CustomerType.INDIVIDUAL));
-		customers.add(new Customer(2, "12346", "yaser mubarok", CustomerType.INDIVIDUAL));
-		customers.add(new Customer(3, "12347", "ahmad luthfi yahya", CustomerType.INDIVIDUAL));
-		customers.add(new Customer(4, "12348", "eva luthfia", CustomerType.INDIVIDUAL));
+		/**
+		 * dummy data customer service example
+		 */
+		customers.add(new Customer(1, "12345", "Muhammad Dicka Nirwansyah", 
+				CustomerType.INDIVIDUAL));
+		customers.add(new Customer(2, "12346", "Muhammad Al-fakir", 
+				CustomerType.INDIVIDUAL));
+		customers.add(new Customer(3, "12347", "Rajeev Kumar Sigh", 
+				CustomerType.INDIVIDUAL));
+		customers.add(new Customer(4, "12348", "Irfan Ghazali", 
+				CustomerType.INDIVIDUAL));
 	}
 	
 	/** find by pesel **/
