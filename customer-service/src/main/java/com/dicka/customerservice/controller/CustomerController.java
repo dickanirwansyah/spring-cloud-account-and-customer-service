@@ -28,7 +28,7 @@ public class CustomerController {
 		this.accountFeign = accountFeign;
 		customers = new ArrayList<Customer>();
 		customers.add(new Customer(1, "12345", "dicka nirwansyah", CustomerType.INDIVIDUAL));
-		customers.add(new Customer(2, "12346", "denada rosa florina", CustomerType.INDIVIDUAL));
+		customers.add(new Customer(2, "12346", "yaser mubarok", CustomerType.INDIVIDUAL));
 		customers.add(new Customer(3, "12347", "ahmad luthfi yahya", CustomerType.INDIVIDUAL));
 		customers.add(new Customer(4, "12348", "eva luthfia", CustomerType.INDIVIDUAL));
 	}
